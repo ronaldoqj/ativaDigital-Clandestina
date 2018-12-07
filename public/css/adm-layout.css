@@ -1,0 +1,514 @@
+/* ------------------------------------------------------------- */
+/*                        Ronaldo Paginas                        */
+/* ------------------------------------------------------------- */
+@font-face {
+    font-family: 'fontello';
+    src: url('/fonts/fontello/fontello.eot?75228816');
+    src: url('/fonts/fontello/fontello.eot?75228816#iefix') format('embedded-opentype'),
+         url('/fonts/fontello/fontello.woff?75228816') format('woff'),
+         url('/fonts/fontello/fontello.ttf?75228816') format('truetype'),
+         url('/fonts/fontello/fontello.svg?75228816#fontello') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.fontello-icon
+{
+    font-family: "fontello";
+    font-style: normal;
+    font-weight: normal;
+    speak: none;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+    /* You can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+html { font-family: 'Open Sans', sans-serif }
+
+/* =========================== Class Helpers ================================ */
+.h-5     { height: 5px; }
+.h-10    { height: 10px; }
+.h-30    { height: 30px; }
+.m-t-30  { margin-top: 30px; }
+.m-t-50  { margin-top: 50px; }
+.m-b-20  { margin-bottom: 20px; }
+.m-b-40  { margin-bottom: 40px; }
+.m-b-60  { margin-bottom: 60px; }
+.m-l--20 { margin-left: -20px; }
+.p-10    { padding: 10px; }
+.p-t-20  { padding-top: 20px; }
+.p-t-30  { padding-top: 30px; }
+.p-l-16  { padding-left: 16px; }
+.teste   { border: solid 1px #00e5ff; }
+.teste2  { border: solid 1px red; }
+.teste3  { border: solid 1px purple; }
+
+/* Correções layout */
+#sidebar.active .titulo-menu-header { font-size: 0.9em; }
+#sidebar .titulo-menu-header {
+  background-color: #474143;
+  font-size: 1.1em;
+  height: 55px;
+}
+#sidebar .titulo-menu-header img { margin-top: 17px; }
+
+
+#sidebar.active .titulos-menus-adm { font-size: 0.9em; padding: 0; }
+#sidebar .titulos-menus-adm {
+   clear: both;
+   font-size: 1em;
+   padding: 0px 0px 5px 13px;
+   color: #000;
+}
+
+.panel-body input { margin-top: 5px; margin-bottom: 5px; }
+.adm-title-input { margin-top: 10px; margin-bottom: 5px; font-weight: bold; }
+
+.i-corrige {
+  font-size: 20px;
+  margin: 0px;
+  padding: 3px 0 0;
+}
+
+
+.table-home-title { text-align: center; }
+.table-home-title .title {
+  font-size: 1.2em;
+}
+
+/* .list-unstyled-top { padding-top: 20px; } */
+
+/*#sidebarCollapse:hover { color: #666; transition: 0.3s; }*/
+.navbar i:hover, .navbar a:hover { color: white;}
+#sidebarCollapse {
+    cursor: pointer;
+    font-size: 2em;
+    transition: 0.3s;
+}
+
+/*
+#sidebar.active .titulo-menu-header h3, #sidebar.active .CTAs {
+    display: none;
+}
+
+#sidebar.active .titulo-menu-header strong {
+    display: block;
+}
+#sidebar.active .titulo-menu-header strong img { margin-top: 8px; }
+*/
+
+.adm-avatar-menu { float: left; width: 50px; margin-right: 10px; }
+.adm-info-avatar-menu {
+    float: left;
+    /* width: 135px; */
+    list-style: none;
+    margin-top: 6px;
+    font-size: 16px;
+}
+.adm-info-avatar-menu ul { list-style: none; margin: 0; padding: 0; }
+.adm-info-avatar-menu ul li { margin-bottom: 5px; }
+
+
+#sidebar.active .adm-avatar-menu { clear: both; width: auto; margin-left: 10px; }
+#sidebar.active .adm-info-avatar-menu {
+    clear: both;
+    width: auto;
+    font-size: 12px;
+    line-height: 12px;
+}
+
+/* Categorias  */
+.CATEGORIAS-corrigeThumbs {
+    padding: 4px !important;
+}
+.CATEGORIAS-thumbs:hover { cursor: pointer; border: solid 3px; transition: 0.3s; box-shadow: 1px 1px 5px #000; }
+.CATEGORIAS-thumbs {
+    width: 30px;
+    height: 30px;
+
+    background-position: center !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+
+    border: solid 1px;
+    transition: 0.3s;
+}
+
+/* Ajustes dos textos dos check-boxs  */
+.check-register {
+    font-size: 0.8em;
+    letter-spacing: -0.5px;
+    margin-left: 3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    transition: 0.3s;
+}
+
+.check-register.active {
+    color: white;
+    background-color: #047101;
+    transition: 0.3s;
+    padding-left: 3px;
+    padding-right: 3px;
+    transition: 0.3s;
+}
+
+.size-font {
+    font-size: 0.8em !important;
+}
+
+/* Efeito update inputs orders */
+.sombra-update {
+    box-shadow: 3px 1px 25px 5px #047101;
+    transition: 0s;
+}
+
+/* ------------------------------------------------------------- */
+/*                        Fim Ronaldo Paginas                    */
+/* ------------------------------------------------------------- */
+
+/*
+    DEMO STYLE
+*/
+/*@import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";*/
+
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #fafafa;
+    font-size: 14px;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    line-height: 1.7em;
+    color: #999;
+}
+
+a, a:hover, a:focus {
+    color: inherit;
+    text-decoration: none;
+    transition: all 0.3s;
+}
+
+.navbar {
+    height: 55px;
+    border: none;
+    border-radius: 0;
+    color: #c5c5c5;
+    margin-bottom: 20px;
+    background: #474143;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-btn {
+    box-shadow: none;
+    outline: none !important;
+    border: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    border-bottom: 1px dashed #ddd;
+    margin: 40px 0;
+}
+
+i, span {
+    display: inline-block;
+}
+
+/* ---------------------------------------------------
+    SIDEBAR STYLE
+----------------------------------------------------- */
+.wrapper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    min-width: 220px;
+    max-width: 220px;
+    background: #ffc736;
+    color: #fff;
+    transition: all 0.3s;
+    /*box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);*/
+    -webkit-box-shadow: 0 0px 3px 0px #777;
+       -moz-box-shadow: 0 0px 3px 0px #777;
+            box-shadow: 0 0px 3px 0px #777;
+
+
+}
+
+#sidebar.active {
+    min-width: 100px;
+    max-width: 100px;
+    text-align: center;
+}
+
+#sidebar.active .titulo-menu-header h3, #sidebar.active .CTAs {
+    display: none;
+}
+
+#sidebar.active .titulo-menu-header strong {
+    display: block;
+}
+#sidebar.active .titulo-menu-header strong img { margin-top: 8px; }
+
+/*
+#sidebar.active .sidebar-header h3, #sidebar.active .CTAs {
+    display: none;
+}
+
+#sidebar.active .sidebar-header strong {
+    display: block;
+} */
+
+#sidebar ul li a {
+    text-align: left;
+}
+
+#sidebar.active ul li a {
+    padding: 20px 10px;
+    text-align: center;
+    font-size: 0.82em;
+}
+
+#sidebar.active ul li a i {
+    margin-right:  0;
+    display: block;
+    /*font-size: 1.8em;*/
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+#sidebar.active ul ul a {
+    padding: 10px !important;
+}
+
+#sidebar.active a[aria-expanded="false"]::before, #sidebar.active a[aria-expanded="true"]::before {
+    top: auto;
+    bottom: 5px;
+    /*right: 50%;*/
+    right: 50%;
+    width: 100%;
+
+    /*font-family: 'Glyphicons Halflings';*/
+    font-family: 'Material Icons';
+    content: '\e313';
+
+    transition: 0.3s;
+
+    -webkit-transform: translateX(50%);
+    -ms-transform: translateX(50%);
+    transform: translateX(50%);
+}
+#sidebar.active a[aria-expanded="true"]::before {
+    right: 0;
+    -ms-transform: rotate(180deg); /* IE 9 */
+    -webkit-transform: rotate(180deg); /* Safari 3-8 */
+    transform: rotate(180deg);
+    transition: 0.3s;
+}
+
+#sidebar .sidebar-header {
+    padding: 12px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    line-height: 1em;
+
+}
+
+#sidebar .titulo-menu-header strong {
+    display: none;
+}
+/* #sidebar .sidebar-header strong {
+    display: none;
+    font-size: 1.8em;
+} */
+
+#sidebar ul.components {
+    padding: 1px 0;
+    border-bottom: 1px solid #d39e2a;
+}
+
+#sidebar ul li a {
+    display: block;
+    padding: 10px;
+    font-size: 1em;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+    border-left: solid 0px #474142;
+    transition: 0.3s;
+}
+#sidebar ul li a:hover {
+    background: #d39e2a;
+    border-left: solid 4px #474142;
+    transition: 0.3s ease-out;
+}
+#sidebar ul li a i {
+    margin-right: 5px;
+    vertical-align: text-bottom;
+    font-size: 1.6em;
+}
+
+#sidebar ul li.active > a, a[aria-expanded="true"] {
+    background: #d39e2a;
+    border-left: solid 4px #474142;
+    transition: 0.3s ease-out;
+}
+
+
+#sidebar a[data-toggle="collapse"] {
+    position: relative;
+}
+
+#sidebar a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+    content: '\e315';
+    display: block;
+    position: absolute;
+    right: 20px;
+    /*font-family: 'Glyphicons Halflings';*/
+    font-family: 'Material Icons';
+
+    font-size: 1.2em;
+    transition: 0.3s;
+}
+#sidebar a[aria-expanded="true"]::before {
+    /*content: '\e313';*/
+	   /* Rotate div */
+    -ms-transform: rotate(90deg); /* IE 9 */
+    -webkit-transform: rotate(90deg); /* Safari 3-8 */
+    transform: rotate(90deg);
+	   transition: 0.3s;
+}
+
+#sidebar ul ul a {
+    font-size: 0.8em !important;
+    padding-left: 30px !important;
+    background: #7a5d1c;
+}
+
+#sidebar ul.CTAs {
+    padding: 20px;
+}
+
+#sidebar ul.CTAs a {
+    text-align: center;
+    font-size: 0.9em !important;
+    display: block;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#sidebar a.download {
+    background: #fff;
+    color: #7386D5;
+}
+
+#sidebar a.article, a.article:hover {
+    background: #6d7fcc !important;
+    color: #fff !important;
+}
+
+
+
+/* ---------------------------------------------------
+    CONTENT STYLE
+----------------------------------------------------- */
+#content {
+    /*padding: 20px;*/
+    padding-bottom: 20px;
+    width: 100%;
+    min-height: 100vh;
+    transition: all 0.3s;
+}
+
+
+/* ---------------------------------------------------
+    MEDIAQUERIES
+----------------------------------------------------- */
+@media (max-width: 768px) {
+    #sidebar {
+        min-width: 100px;
+        max-width: 100px;
+        text-align: center;
+        margin-left: -100px !important ;
+    }
+
+    #sidebar .adm-info-avatar-menu{ font-size: 12px; line-height: 12px; }
+
+    a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+          display: none;
+    }
+    a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+          display: none;
+    }
+    a[aria-expanded="false"]::before, a[aria-expanded="true"]::before {
+        top: auto;
+        bottom: 5px;
+        right: 50%;
+        -webkit-transform: translateX(50%);
+        -ms-transform: translateX(50%);
+        transform: translateX(50%);
+    }
+    #sidebar.active {
+        margin-left: 0 !important;
+    }
+
+    #sidebar .sidebar-header h3, #sidebar .CTAs {
+        display: none;
+    }
+
+    #sidebar .sidebar-header strong {
+        display: block;
+    }
+
+    #sidebar ul li a {
+        padding: 20px 10px;
+    }
+
+    #sidebar ul li a span {
+        font-size: 0.85em;
+    }
+    #sidebar ul li a i {
+        margin-right:  0;
+        display: block;
+    }
+
+    #sidebar ul ul a {
+        padding: 10px !important;
+    }
+
+    #sidebar ul li a i {
+        font-size: 1.3em;
+    }
+    #sidebar {
+        margin-left: 0;
+    }
+    #sidebarCollapse span {
+        display: none;
+    }
+}

@@ -1,0 +1,9 @@
+/#ConfiguracoesWeb
+/nbproject
+/node_modules
+/vendor
+/.idea
+/.vagrant
+npm-debug.log
+yarn-error.log
+.env

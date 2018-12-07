@@ -1,0 +1,83 @@
+/* Topo */
+.topo-contato {
+    height: 437px;
+    background: url('/imgs/Contato/banner-topo.jpg') no-repeat;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    margin-bottom: 40px;
+}
+
+.colum-right { margin-bottom: 50px; }
+
+.texto-topo {
+    text-align: center;
+    color: white;
+    margin-top: 280px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.title-contato {
+    font-size: 2.2em;
+    color: #6c6768;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.box-contato {
+    border-left: 8px solid #ffc636;
+    padding-left: 20px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+}
+
+.box-contato p a { color: #474142; word-wrap: break-word; }
+.box-contato p a:hover { text-decoration: underline; }
+
+.social { margin-top: -10px; margin-left: 5px; }
+.social i {
+    color: #4c4c4c;
+    border: solid 1px;
+    border-radius: 50px;
+    padding: 9px;
+    margin: 5px;
+    width: 37px;
+    transition: 0.3s;
+}
+
+.social i:hover {
+    background-color: #fec636;
+    border: solid 1px #be9630;
+    transition: 0.4s;
+}
+
+.p-dados-contato { line-height: 1em; margin: 5px 0; }
+.outras-formas-contato { margin-top: 30px; }
+.outras-formas-contato .title {
+    color: #fec636;
+    font-size: 2em;
+    line-height: 1.1em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.outras-formas-contato a {
+    padding-left: 30px;
+    color: #474142;
+    word-wrap: break-word;
+}
+.outras-formas-contato a:hover { text-decoration: underline; }
+.outras-formas-contato a::before {
+  content: "";
+  width: 8px;
+  height: 12px;
+  position: absolute;
+  background: #fec636;
+  margin-top: 8px;
+  margin-left: -30px;
+  padding-left: 0px;
+}

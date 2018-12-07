@@ -1,0 +1,81 @@
+/* Ajustes topo */
+.carousel table {
+    height: 100%;
+    width: auto;
+}
+.carousel table td {
+    text-align: left;
+    vertical-align: bottom;
+}
+
+
+.carousel .datas .divisao { width: 44px; height: 7px; margin: 14px auto; }
+.carousel .datas {
+    padding: 10px 6px;
+    text-align: center;
+    border: solid 0px #474142;
+    clear: both;
+    float: right;
+    margin-bottom: 30px;
+}
+
+.carousel .datas p { padding: 0; margin: 4px 0; }
+.carousel .datas p:first-child { font-size: 2em; }
+.carousel .datas p:last-child { font-size: 1.8em; }
+.carousel .datas .A-topo { width: 8px; height: 20px; margin: 0 8px; }
+.carousel .datas .Div-A { font-size: 1em; }
+.carousel .datas .A-button { width: 8px; height: 20px; margin: 0 8px; }
+
+/* Correções para agenda */
+.corrige-td { vertical-align: middle !important; }
+/* Ajustes Mandala */
+.relogio {
+    background: url('/imgs/Agenda/relogio.png');
+    position: absolute;
+    margin-top: -85px;
+    margin-left: -150px;
+    width: 434px;
+    height: 226px;
+}
+
+/* Campo busca */
+.busca-conteudo {
+    float: right;
+    border: solid 3px #c7c6c6;
+    margin-top: 40px;
+    padding: 10px;
+}
+.busca-conteudo input[type="text"] {
+    width: 210px;
+    font-style: italic;
+    text-align: center;
+    margin: 0 15px 0 35px;
+    border: 0;
+    font-size: 1.2em;
+}
+.busca-conteudo input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.busca-conteudo input[type="submit"] {
+   background: url(/imgs/Conteudo/lupa.png) no-repeat;
+   cursor: pointer;
+   width: 35px;
+   height: 35px;
+   border: 0;
+   padding: 10px;
+}
+
+#filtros { margin-top: 30px; transition: 0.3s; }
+
+.carousel table td > p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+@media (max-width: 992px) {
+    #filtros { margin-top: 30px; transition: 0.3s; }
+}

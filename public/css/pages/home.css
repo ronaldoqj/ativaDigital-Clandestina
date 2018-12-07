@@ -1,0 +1,117 @@
+/* =============================== Locais =================================== */
+#owl-locais .item { margin: 10px; }
+
+#locais {
+    margin-top: 40px;
+    padding-top: 20px;
+    background:  linear-gradient( #efefef 70%, white 30%);
+}
+
+#locais .vitrola {
+    background: url('/imgs/Home/pena.png');
+    position: absolute;
+    right: 10px;
+    margin-top: 220px;
+    width: 277px;
+    height: 167px;
+}
+
+
+
+#locais a:hover .text-local p { color: #000; transition: 0.3s; }
+
+/* ============================= Parceiros ================================== */
+#parceiros {
+    /* margin-top: 180px;
+    padding-top: 20px; */
+    background-color: #efefef;
+}
+
+#owl-parceiros { margin-bottom: 30px; }
+#owl-parceiros .parceiros {
+    width: 90px;
+    height: 90px;
+    margin: 0 auto;
+
+    background-repeat: no-repeat;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    transition: 0.3s;
+}
+
+@media (max-width: 600px) {
+    #locais {
+      margin-top: 0px;
+      background: white;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    #parceiros {
+        background-color: #efefef;
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 992px) {
+    #conteudo #card-conteudo {
+        margin-top: 0px;
+        transition: 0.3s;
+    }
+    #conteudo .conteudo-home {
+        margin-top: -20px;
+        transition: 0.3s;
+    }
+}
+
+
+/* OWL Casas */
+
+#owl-locais .owl-buttons .owl-prev {
+    float: left;
+    margin-left: -32px;
+    font-size: 20px;
+    color: black;
+    background: none;
+    margin-top: -245px;
+
+    border-radius: 0;
+    width: 0;
+    padding: 0;
+}
+#owl-locais .owl-buttons .owl-prev div {
+    width: 33px;
+    height: 45px;
+    background-position: left !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}
+
+#owl-locais .owl-buttons .owl-next {
+    float: right;
+    margin-right: 10px;
+    font-size: 20px;
+    color: black;
+    background: none;
+    margin-top: -245px;
+
+    border-radius: 0;
+    width: 0;
+    padding: 0;
+}
+
+#owl-locais .owl-buttons .owl-next div {
+    width: 33px;
+    height: 45px;
+    background-position: right !important;
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    -o-background-size: cover !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+}

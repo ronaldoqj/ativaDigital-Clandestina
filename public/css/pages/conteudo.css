@@ -1,0 +1,67 @@
+/* Ajustes topo */
+.carousel table {
+    height: 100%;
+}
+.carousel table td {
+    text-align: left;
+    vertical-align: bottom;
+}
+
+.carousel .datas p { padding: 0; margin: 4px 0; }
+.carousel .datas p:first-child { font-size: 2em; }
+.carousel .datas p:last-child { font-size: 1.8em; }
+.carousel .datas .A-topo { width: 8px; height: 20px; margin: 0 8px; }
+.carousel .datas .Div-A { font-size: 1em; }
+.carousel .datas .A-button { width: 8px; height: 20px; margin: 0 8px; }
+
+/* Correções para agenda */
+.corrige-td { vertical-align: middle !important; }
+/* Ajustes Mandala */
+.megafone {
+    background: url('/imgs/Conteudo/megafone.png');
+    position: absolute;
+    margin-top: -55px;
+    width: 424px;
+    height: 189px;
+}
+
+#filtros { margin-top: 30px; }
+
+#conteudo { margin-top: 0; }
+
+.carousel table td > p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: right;
+    text-transform: uppercase;
+}
+
+/* Campo busca */
+.busca-conteudo {
+    float: right;
+    border: solid 3px #c7c6c6;
+    margin-top: 40px;
+    padding: 10px;
+}
+.busca-conteudo input[type="text"] {
+    width: 210px;
+    font-style: italic;
+    text-align: center;
+    margin: 0 15px 0 35px;
+    border: 0;
+    font-size: 1.2em;
+}
+.busca-conteudo input:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+}
+
+.busca-conteudo input[type="submit"] {
+   background: url(/imgs/Conteudo/lupa.png) no-repeat;
+   cursor: pointer;
+   width: 35px;
+   height: 35px;
+   border: 0;
+   padding: 10px;
+}
